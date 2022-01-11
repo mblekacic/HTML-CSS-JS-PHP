@@ -1,0 +1,341 @@
+body {
+font-family: 'Times New Roman', Times, serif;
+
+    --primary-color: #831875;
+    --light-primary-color: #f161e5;
+
+    --secondary-color: #e0ec33;
+    --light-secondary-color: #e7e57b;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+    margin-top:50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:-webkit-fill-available;
+    margin-left: 20%;
+    margin-right:20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.ikone-desno{
+    margin-left: inherit;
+    display: flex;
+}
+#srce:hover,
+#korisnik:hover,
+#bookmark:hover,
+#komentar:hover,
+#podijeli:hover,
+#brisi:hover{
+transform: scale(1.2);
+}
+
+#srce{
+    color: red;
+    transition: transform 0.2s ease-in-out;
+    
+}
+#korisnik{
+    color:cornflowerblue;
+    padding-left: 0.1em;
+}
+#bookmark{
+    color: black;
+    padding-left: 0.1em;
+
+}
+#brisi{
+    cursor: pointer;
+}
+#brisi:hover{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+#srce:hover{
+    cursor: pointer;
+    color: red;
+    transition: transform 0.2s ease-in-out;
+}
+
+#korisnik:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+    transition: transform 0.2s ease-in-out 0;
+}
+
+#bookmark:hover{
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s ease-in-out 0;
+}
+
+#komentar:hover{
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s ease-in-out 0;
+}
+
+
+#logo-slika {
+    height: 50px;
+    width: 50px;
+}
+#logo-text{
+    width:30%;
+}
+#search-container {
+    background-color: white;
+    border: 1px solid lightgray;
+    display: flex;
+    left: -5px;
+    margin-left: 20px;
+    border:1px solid;
+}
+
+.fa{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+
+#search-container .search-icon {
+    display:flex;
+    padding: 1px;
+    color: black;
+    background-color: lightgrey;
+}
+
+#search-box {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: lightgray;
+}
+
+#botun-dodaj{
+    cursor: pointer;
+    position: relative;
+    background: none;
+    color: black;
+    padding: 15px;
+    padding-right: 0;
+    margin-bottom: 10px;
+    margin-top:10px;
+    border:1px solid lightgrey;
+    font-size: 22px;
+    width: -webkit-fill-available;
+    display: grid;
+}
+.objava{
+    position: relative; 
+    width: 100%;
+    border: 1px solid black;
+    
+}
+
+.objava-korisnika{
+    display: flex;
+    width: -webkit-fill-available;
+}
+.profilna{
+    width: 60px;
+    height: 60px;
+    border:solid 1px black;
+    margin:0,5em;
+    border-radius: 50%;
+    margin: 0.2em;
+}
+.informacije{
+    margin:0.5em;
+    margin-left: 0.5em;
+    margin-top: 2px;
+    left:70px;
+    top:60px;
+}
+
+p {
+    color: grey;
+    margin-top: 1px;
+}
+
+.slika img{
+    width: -webkit-fill-available;
+    display:flex;
+   
+}
+
+.ikone-ispod-objave-lijevo {
+    float:left;
+   
+}
+.ikone-ispod-objave{
+    width: -webkit-fill-available;
+    font-size: 2em;
+    margin-right: 0.2em;
+
+}
+.ikone-ispod-objave-desno{
+    float: right;
+}
+
+.ispod-objave{
+    display: grid;
+    margin-left: 0.2em;
+}
+.lajk p{
+    color: black;
+}
+
+.link{
+    color: dodgerblue;
+    margin: 0.1em;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-column-gap: 5%;
+}
+
+.komentari p{
+    color: black;
+    margin-top:1em;
+}
+
+.komentiraj {
+    display: grid;
+    border: none;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.Predlozeno{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid lightgray;
+    display: block;
+
+}
+
+.Predlozeno p{
+    margin: 0.2em;
+}
+
+.predlozeni-korisnici{
+    display: flex;
+}
+
+.profilna-predlozenog{
+    width: -webkit-fill-available;
+    border:1px solid black;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+}
+
+#prati{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.predlozeni-korisnik p{
+    color:black;
+}
+
+.predlozeni-korisnik{
+    position: relative;
+    border: 1px solid gray;
+    padding: 1em;
+    text-align: center;
+    margin: 5px;
+    width: -webkit-fill-available;
+
+}
+
+.korisnik{
+    display: flex;
+    padding-top: 0.5em;
+}
+
+.o-meni{
+    border:solid 1px lightgray;
+    padding: 5px;
+    width: -webkit-fill-available;
+
+}
+
+.predlozeni-korisnik1{
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    display: -webkit-box;
+}
+
+
+.predlozeni-korisnik>i{
+    position: absolute;
+    top:5%;
+    right:5%;
+    color:lightgray;
+    cursor: pointer;
+
+}
+.hidden{
+    display: none !important;
+}
+@media screen and(max-width: 750px){
+    .container{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 700px){
+    .drugi-stupac{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        width: 400px;
+    }
+
+    #search-container{
+        display: none;
+    }
+
+    #logo-slika{
+        display: none;
+    }
+
+   
+     
+    .ikone-desno{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+
+
+}
+
+
